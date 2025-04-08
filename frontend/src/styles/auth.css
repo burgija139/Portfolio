@@ -1,0 +1,147 @@
+/* Stilizacija celokupne forme */
+
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("https://cdn.prod.website-files.com/6766fbf61376786f1715ae35/676aa51a7f4212a10c30d000_12893174_5072609.jpg");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    font-family: SF Pro Display, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  .auth-form {
+    background-color: rgba(0,0,0,0.5);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    color: white;
+  }
+
+  .login-form {
+    background-color: rgba(0,0,0,0.5);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    color: white;
+  }
+  
+  /* Stilizacija input polja */
+  .auth-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px -10px;
+    border: 1px solid rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: SF Pro Display, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .login-form input{
+    width: 95%;
+    padding: 10px;
+    margin: 10px -20px 10px 1px;
+    border: 1px solid rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: SF Pro Display, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  
+  /* Stilizacija dugmeta za submit */
+  .auth-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #270074;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-family: SF Pro Display, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  .auth-form button:hover {
+    background-color: #4803f8;
+  }
+
+  .login-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #270074;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-family: SF Pro Display, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  .login-form button:hover {
+    background-color: #4803f8;
+  }
+  
+  /* Stilizacija poruka o grešci i uspehu */
+.error-message,
+.success-message {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
+}
+  
+.error-message {
+  background-color: rgb(149, 0, 0);
+  color: white;
+  padding: 10px;
+  width: max-content;
+  border-radius: 5px;
+}
+  
+.success-message {
+  background-color: green;
+  color: white;
+  padding: 10px;
+  width: max-content;
+  border-radius: 5px;
+}
+  
+/* Stilizacija zaglavlja */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  
+}
+
+.classReg{
+  color: white;
+}
+
+.classLogin{
+  color: white;
+}
+
+.register-question{
+  text-align: center;
+  color: white;
+}
+
+.register-link:hover{
+  color: darkblue;
+  cursor: pointer;
+}
+
+
+  

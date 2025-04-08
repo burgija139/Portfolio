@@ -1,0 +1,41 @@
+version: "3.3"
+
+services:
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+
+  db:
+    image: mysql:8.0  # Fixed indentation
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: portfolio_app
+      MYSQL_USER: vladimir002
+      MYSQL_PASSWORD: 1234
+    volumes:
+      - db_data:/var/lib/mysql 
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+  backend:
+    build:
+      context: ./Flask-BackEnd
+    ports:
+      - "5000:5000"
+    env_file:
+      - ./Flask-BackEnd/.env
+    depends_on:
+      db:
+        condition: service_healthy
+
+volumes:
+  db_data:
